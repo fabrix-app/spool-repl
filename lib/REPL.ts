@@ -17,7 +17,7 @@ import * as pkg from '../package.json'
  *
  * @see {@link https://nodejs.org/api/repl.html#repl_repl}
  */
-export class REPL extends ToolSpool {
+export class REPLSpool extends ToolSpool {
   public server
   public historyFile
 

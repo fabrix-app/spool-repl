@@ -11,7 +11,7 @@ module.exports = {
     },
     main: {
       spools: [
-        require('../dist').REPL // spool-repl
+        require('../dist').REPLSpool
       ],
       paths: {
         temp: path.resolve(__dirname)
