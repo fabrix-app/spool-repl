@@ -87,8 +87,8 @@ information on how our projects are organized and how to get started.
 
 [npm-image]: https://img.shields.io/npm/v/spool-repl.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/spool-repl
-[ci-image]: https://img.shields.io/travis/fabrix-app/spool-repl/master.svg?style=flat-square
-[ci-url]: https://travis-ci.org/fabrix-app/spool-repl
+[ci-image]: https://img.shields.io/circleci/project/github/fabrix-app/spool-repl/nmaster.svg
+[ci-url]: https://circleci.com/gh/fabrix-app/spool-repl/tree/master
 [daviddm-image]: http://img.shields.io/david/fabrix-app/spool-repl.svg?style=flat-square
 [daviddm-url]: https://david-dm.org/fabrix-app/spool-repl
 [codeclimate-image]: https://img.shields.io/codeclimate/github/fabrix-app/spool-repl.svg?style=flat-square
