@@ -2,12 +2,18 @@
 
 [![Gitter][gitter-image]][gitter-url]
 [![NPM version][npm-image]][npm-url]
-[![Build status][ci-image]][ci-url]
+[![Build Status][ci-image]][ci-url]
+[![Test Coverage][coverage-image]][coverage-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
-[![Code Climate][codeclimate-image]][codeclimate-url]
+[![Follow @fabrix-app on Twitter][twitter-image]][twitter-url]
 
 [REPL](https://nodejs.org/api/repl.html) Spool. Adds an interactive shell to your Fabrix app to help with
 development and debugging. Saves command history between sessions.
+
+## Install
+```sh
+$ npm install @fabrix/spool-repl --save
+```
 
 ## Usage
 The repl spool is loaded in your spool config per usual.
@@ -87,7 +93,7 @@ information on how our projects are organized and how to get started.
 
 [npm-image]: https://img.shields.io/npm/v/spool-repl.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/spool-repl
-[ci-image]: https://img.shields.io/circleci/project/github/fabrix-app/spool-repl/nmaster.svg
+[ci-image]: https://img.shields.io/circleci/project/github/fabrix-app/spool-repl/master.svg
 [ci-url]: https://circleci.com/gh/fabrix-app/spool-repl/tree/master
 [daviddm-image]: http://img.shields.io/david/fabrix-app/spool-repl.svg?style=flat-square
 [daviddm-url]: https://david-dm.org/fabrix-app/spool-repl
@@ -95,4 +101,6 @@ information on how our projects are organized and how to get started.
 [codeclimate-url]: https://codeclimate.com/github/fabrix-app/spool-repl
 [gitter-image]: http://img.shields.io/badge/+%20GITTER-JOIN%20CHAT%20%E2%86%92-1DCE73.svg?style=flat-square
 [gitter-url]: https://gitter.im/fabrix-app/fabrix
+[twitter-image]: https://img.shields.io/twitter/follow/fabrix-app.svg?style=social
+[twitter-url]: https://twitter.com/fabrix-app
 
