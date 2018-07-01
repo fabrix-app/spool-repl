@@ -38,41 +38,51 @@ export const Inspect = {
   },
 
   configureApi (api) {
-    Object.defineProperty(api.controllers, 'inspect', {
-      enumerable: false,
-      configurable: true,
-      value () {
-        return createConsoleTree(TreeBuilder.getControllerTree(api.controllers))
-      }
-    })
-    Object.defineProperty(api.services, 'inspect', {
-      enumerable: false,
-      configurable: true,
-      value () {
-        return createConsoleTree(TreeBuilder.getServiceTree(api.services))
-      }
-    })
-    Object.defineProperty(api.models, 'inspect', {
-      enumerable: false,
-      configurable: true,
-      value () {
-        return createConsoleTree(TreeBuilder.getModelTree(api.models))
-      }
-    })
-    Object.defineProperty(api.resolvers, 'inspect', {
-      enumerable: false,
-      configurable: true,
-      value () {
-        return createConsoleTree(TreeBuilder.getResolverTree(api.resolvers))
-      }
-    })
-    Object.defineProperty(api.policies, 'inspect', {
-      enumerable: false,
-      configurable: true,
-      value () {
-        return createConsoleTree(TreeBuilder.getPoliciesTree(api.policies))
-      }
-    })
+    if (api.hasOwnProperty('controllers')) {
+      Object.defineProperty(api.controllers, 'inspect', {
+        enumerable: false,
+        configurable: true,
+        value() {
+          return createConsoleTree(TreeBuilder.getControllerTree(api.controllers))
+        }
+      })
+    }
+    if (api.hasOwnProperty('services')) {
+      Object.defineProperty(api.services, 'inspect', {
+        enumerable: false,
+        configurable: true,
+        value() {
+          return createConsoleTree(TreeBuilder.getServiceTree(api.services))
+        }
+      })
+    }
+    if (api.hasOwnProperty('models')) {
+      Object.defineProperty(api.models, 'inspect', {
+        enumerable: false,
+        configurable: true,
+        value() {
+          return createConsoleTree(TreeBuilder.getModelTree(api.models))
+        }
+      })
+    }
+    if (api.hasOwnProperty('resolvers')) {
+      Object.defineProperty(api.resolvers, 'inspect', {
+        enumerable: false,
+        configurable: true,
+        value() {
+          return createConsoleTree(TreeBuilder.getResolverTree(api.resolvers))
+        }
+      })
+    }
+    if (api.hasOwnProperty('policies')) {
+      Object.defineProperty(api.policies, 'inspect', {
+        enumerable: false,
+        configurable: true,
+        value() {
+          return createConsoleTree(TreeBuilder.getPoliciesTree(api.policies))
+        }
+      })
+    }
     Object.defineProperty(api, 'inspect', {
       enumerable: false,
       configurable: true,
@@ -83,10 +93,11 @@ export const Inspect = {
   },
 
   unconfigureApi (api) {
-    delete api.controllers.inspect
-    delete api.services.inspect
-    delete api.models.inspect
-    delete api.policies.inspect
+    Object.keys(api).forEach(resource => {
+      if (api[resource].hasOwnProperty('inspect')) {
+        delete api[resource].inspect
+      }
+    })
     delete api.inspect
   },
 
