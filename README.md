@@ -20,12 +20,12 @@ The repl spool is loaded in your spool config per usual.
 
 ```js
 // config/main.ts
-import { REPL } from 'spool-repl'
+import { REPLSpool } from '@fabrix/spool-repl'
 export const main = {
   // ...
   spools: [
     // ...
-    REPL
+    REPLSpool
   ]
 }
 ```
