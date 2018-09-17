@@ -91,8 +91,8 @@ information on how our projects are organized and how to get started.
 ## License
 [MIT](https://github.com/fabrix-app/spool-repl/blob/master/LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/spool-repl.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/spool-repl
+[npm-image]: https://img.shields.io/npm/v/@fabrix/spool-repl.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@fabrix/spool-repl
 [ci-image]: https://img.shields.io/circleci/project/github/fabrix-app/spool-repl/master.svg
 [ci-url]: https://circleci.com/gh/fabrix-app/spool-repl/tree/master
 [daviddm-image]: http://img.shields.io/david/fabrix-app/spool-repl.svg?style=flat-square
